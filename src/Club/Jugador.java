@@ -11,29 +11,28 @@ import java.util.List;
  */
 
 public class Jugador extends Persona {
-	private Samarreta samarreta;	
 	private List<PersonaContacte> personsContacte;
-	private boolean teGerma;
+	private boolean teGerma;	
 	private String numerCompte;
+	private String nomSemarreta;
+	private String tallaSemarreta;
+	private int numeroSemarreta;
 	
 	// Constructors
 	public Jugador() {}
-	
-	public Jugador(Samarreta samarreta, List<PersonaContacte> personsContacte, boolean teGerma, String numerCompte) {	
-		this.samarreta = samarreta;
+
+	public Jugador(List<PersonaContacte> personsContacte, boolean teGerma, String numerCompte, String nomSemarreta,
+			String tallaSemarreta, int numeroSemarreta) {
+		super();
 		this.personsContacte = personsContacte;
 		this.teGerma = teGerma;
 		this.numerCompte = numerCompte;
+		this.nomSemarreta = nomSemarreta;
+		this.tallaSemarreta = tallaSemarreta;
+		this.numeroSemarreta = numeroSemarreta;
 	}
 
 	// Mètodes accessors
-	public Samarreta getSamarreta() {
-		return samarreta;
-	}
-	public void setSamarreta(Samarreta samarreta) {
-		this.samarreta = samarreta;
-	}
-
 	public List<PersonaContacte> getPersonsContacte() {
 		return personsContacte;
 	}
@@ -54,4 +53,26 @@ public class Jugador extends Persona {
 	public void setNumerCompte(String numerCompte) {
 		this.numerCompte = numerCompte;
 	}
+
+	public String getNomSemarreta() {
+		return nomSemarreta;
+	}
+	public void setNomSemarreta(String nomSemarreta) {
+		this.nomSemarreta = nomSemarreta;
+	}
+
+	public String getTallaSemarreta() {
+		return tallaSemarreta;
+	}
+	public void setTallaSemarreta(String tallaSemarreta) {
+		this.tallaSemarreta = tallaSemarreta;
+	}
+
+	public int getNumeroSemarreta() {
+		return numeroSemarreta;
+	}
+	public void setNumeroSemarreta(int numeroSemarreta) {
+		this.numeroSemarreta = numeroSemarreta;
+	}
+	
 }

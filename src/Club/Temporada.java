@@ -9,24 +9,26 @@ import java.util.List;
  */
 
 public class Temporada {
-	private List<String> nom;
+	private String nom;
 	private JuntaDirectiva juntaDirectiva;
 	private List<Equip> equips;
 	
 	// Constructor
 	public Temporada() {}
 	
-	public Temporada(List<String> nom, JuntaDirectiva juntaDirectiva, List<Equip> equips) {	
+	public Temporada(String nom, JuntaDirectiva juntaDirectiva, List<Equip> equips) {
 		this.nom = nom;
 		this.juntaDirectiva = juntaDirectiva;
 		this.equips = equips;
 	}
-	
+
+
+
 	// Mètodes accessors
-	public List<String> getNom() {
+	public String getNom() {
 		return nom;
 	}
-	public void setNom(List<String> nom) {
+	public void setNom(String nom) {
 		this.nom = nom;
 	}
 

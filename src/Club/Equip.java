@@ -9,6 +9,7 @@ import java.util.List;
  */
 
 public class Equip {
+	private String identificador;
 	private String nom;
 	private String categoria;
 	private List<EquipTecnic> equipTecnic;
@@ -16,14 +17,23 @@ public class Equip {
 	
 	// Constructors
 	public Equip() {}
-	public Equip(String nom, String categoria, List<EquipTecnic> equipTecnic, List<Jugador> jugadors) {	
+
+	public Equip(String identificador, String nom, String categoria, List<EquipTecnic> equipTecnic, List<Jugador> jugadors) {	
+		this.identificador = identificador;
 		this.nom = nom;
 		this.categoria = categoria;
 		this.equipTecnic = equipTecnic;
 		this.jugadors = jugadors;
 	}
-	
+
 	// Mètodes accessors
+	public String getIdentificador() {
+		return identificador;
+	}
+	public void setIdentificador(String identificador) {
+		this.identificador = identificador;
+	}
+	
 	public String getNom() {
 		return nom;
 	}
